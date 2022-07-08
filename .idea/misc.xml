@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/java/com/justin/vietCards/Playground.kt" value="0.335" />
+        <entry key="app/src/main/java/com/justin/vietCards/PlayingCard.kt" value="0.55" />
         <entry key="app/src/main/java/com/justin/vietCards/SamplePlayingCard.kt" value="0.75" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/_0h.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/_h.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/baseline_heart_broken_24.xml" value="0.301" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.299" />
+        <entry key="app/src/main/res/drawable/king_of_diamonds.xml" value="0.138" />
         <entry key="app/src/main/res/drawable/something.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/ten_of_hearts.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/two_of_hearts_background.xml" value="0.299" />

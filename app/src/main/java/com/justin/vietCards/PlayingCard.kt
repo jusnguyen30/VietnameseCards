@@ -18,16 +18,19 @@ import androidx.constraintlayout.compose.ConstraintLayout
 
 @Preview
 @Composable
-fun PreviewSamplePlayingCard() {
-    SamplePlayingCard()
+fun PreviewPlayingCard() {
+    PlayingCard(rank = "K")
 }
 
 @Composable
-fun SamplePlayingCard() {
+fun PlayingCard(
+    modifier: Modifier = Modifier,
+    rank: String
+) {
     Card(
-        modifier = Modifier.size(
-            width = 154.dp,
-            height = 180.dp
+        modifier = modifier.size(
+            width = 95.dp,
+            height = 133.dp
         ),
         shape = RoundedCornerShape(size = 5.dp),
         backgroundColor = Color.White,
@@ -37,7 +40,7 @@ fun SamplePlayingCard() {
             val (rankAndSuitLeft, rankAndSuitRight, suitInCenter) = createRefs()
 
             RankAndSuit(
-                rank = "2",
+                rank = rank,
                 suitDrawable = R.drawable.baseline_heart_broken_24,
                 modifier = Modifier.constrainAs(rankAndSuitLeft) {
                     start.linkTo(
@@ -52,7 +55,7 @@ fun SamplePlayingCard() {
             )
 
             RankAndSuit(
-                rank = "2",
+                rank = rank,
                 suitDrawable = R.drawable.baseline_heart_broken_24,
                 modifier = Modifier.constrainAs(rankAndSuitRight) {
                     end.linkTo(
@@ -90,7 +93,7 @@ private fun RankAndSuit(
     ) {
         Text(
             text = rank,
-            fontSize = 25.sp
+            fontSize = 20.sp
         )
 
         Icon(
