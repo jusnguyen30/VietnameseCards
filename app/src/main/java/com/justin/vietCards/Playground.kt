@@ -29,26 +29,11 @@ fun Playground() {
             .background(Color(0xFFF1D9D9)),
         contentAlignment = Alignment.Center
     ) {
-        //PlayingCard(rank = "K")
-
-        PlayingCard(
-            rank = "K",
-            modifier = Modifier
-                .drawBehind {
-                    this.drawLine(
-                        start = Offset(
-                            x = size.width,
-                            y = 0f
-                        ),
-                        end = Offset(
-                            x = 0f,
-                            y = size.height
-                        ),
-                        color = Color.Green,
-                        strokeWidth = 5f
-                    )
-                }
-                .alpha(0.5f)
-        )
+        StackOfCards {
+            PlayingCard(rank = "2")
+            PlayingCard(rank = "7")
+            PlayingCard(rank = "Q")
+            PlayingCard(rank = "A")
+        }
     }
 }
