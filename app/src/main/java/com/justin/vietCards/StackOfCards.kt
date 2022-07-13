@@ -22,10 +22,6 @@ fun StackOfCards(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit
 ) {
-    /**
-     * TODO: Pass in "content" composable, like a Row or Column does
-     * TODO: For each card, place it relative to an xPosition (previous xPosition + previous card's width / 2)
-     */
     Layout(
         modifier = modifier,
         content = content
